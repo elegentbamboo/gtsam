@@ -1,6 +1,6 @@
 project(GTSAM CXX C)
 cmake_minimum_required(VERSION 3.0)
-
+add_definitions(-std=c++11 -D_GLIBCXX_USE_CXX11_ABI=0)
 # new feature to Cmake Version > 2.8.12
 # Mac ONLY. Define Relative Path on Mac OS
 if(NOT DEFINED CMAKE_MACOSX_RPATH)
